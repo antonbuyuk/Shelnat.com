@@ -1,0 +1,12 @@
+.accardion_list.accardion-black(data-accordion, data-allow-all-closed='true')
+    for item in accardionsItems
+        .accardion_item(data-accordion-item)
+            a.accardion_header(href='#')
+                span.plus
+                span=item.title
+            .accardion_content(data-tab-content)
+                for paragraf in item.text
+                    p=paragraf
+
+//- -var accardionsItems = [{"title":"Когда можно начинать разработку дизайн-проекта?","text":["test1","test2"]}];
+//- include components/_accardion

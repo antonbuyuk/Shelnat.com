@@ -1,0 +1,8 @@
+for radio in radioItem
+    .form_item.radio
+        input(type="radio", name="", id=radio.id)
+        span
+        label(for=radio.id)= radio.text
+
+//- -var radioItem = [{"id":"test1","text":"Я даю согласие на обработку своих персональных данных"}];
+//- include components/_radio

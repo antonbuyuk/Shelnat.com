@@ -1,0 +1,40 @@
+extends templates/_layout
+
+block vars
+	- var page = "guidline";
+	- var title = "guidline";
+
+block content
+	.row
+		.columns.small-12
+			-var btnItem = [{"href":"#","size":"medium","type":"floatBlack","text":"Показать ещё"}];
+			include components/_btn
+
+			-var btnItem = [{"href":"#","size":"medium","type":"floatWhite","text":"Показать ещё"}];
+			include components/_btn
+
+			-var btnItem = [{"href":"#","size":"medium","type":"black","text":"Отправить"}];
+			include components/_btn
+	
+	.row
+		.columns.small-12
+			-var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Портфолио"}];
+			include components/_title
+		
+	.row
+		.columns.small-7
+			form(action="", data-abide, novalidate)
+				-var inputItems = [{"small":"12","medium":"6","large":"6","placeholder":"Портфолио"}];
+				include components/_input
+				include components/_textarea
+				.row
+					.columns.flex-row
+						-var checkboxItem = [{"id":"test1","text":"Я даю согласие на обработку своих персональных данных"}];
+						include components/_checkbox
+						-var btnItem = [{"href":"#","size":"medium","type":"black ml-auto","text":"Отправить"}];
+						include components/_btn
+	
+	.row
+		.column
+			-var accardionsItems = [{"title":"Когда можно начинать разработку дизайн-проекта?","text":["test1","test2"]},{"title":"Когда можно начинать разработку дизайн-проекта?","text":["test1","test2"]},{"title":"Когда можно начинать разработку дизайн-проекта?","text":["Срок процесса ремонта может зависеть от времени года, состояния объекта, состава строительной бригады и количества смен, сложности проекта, заказываете ли Вы его заранее до сдачи дома, а также от конкретных конструктивных решений и конечно, от метража. Адекватно оценить сроки строители смогут только после подготовки дизайн-проекта, когда будет понятен объем предстоящих работ и ясны все решения. Также, на общий срок готовности может влиять необходимость в ожидании заказных позиций, как чистовых материалов (около 3 мес. из Европы, или 6 мес. из США), так и всей мебели на заказ (в т.ч. кухни)."]}];
+			include components/_accardion

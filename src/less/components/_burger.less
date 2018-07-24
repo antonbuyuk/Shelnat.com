@@ -1,0 +1,41 @@
+.burger{
+    position: relative;
+    width: 1.75rem;
+    min-width: 1.75rem;
+    height: 1.125rem;
+    display: block;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+
+    &_spin{
+        position: relative;
+        width: 100%;
+        height: 2px;
+        display: block;
+        transition: @transition-time;
+
+        &:nth-child(1){}
+        &:nth-child(2){
+            margin: auto 0;
+        }
+        &:nth-child(3){}
+    }
+
+    &.is-active{
+
+        .burger_spin{
+            &:nth-child(1){
+                transform: translateY(0.5rem) rotate(45deg);
+            }
+
+            &:nth-child(2){
+                opacity: 0;
+            }
+
+            &:nth-child(3){
+                transform: translateY(-0.5rem) rotate(-45deg);
+            }
+        }
+    }
+}

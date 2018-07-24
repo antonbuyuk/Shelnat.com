@@ -1,0 +1,9 @@
+.row
+    for input in inputItems
+        .columns(class="small-"+ input.small + " medium-"+ input.medium +" large-"+ input.large)
+            .form_item
+                input(type="text", name="", placeholder=input.placeholder, required)
+                span.form-error Заполните поле!
+
+//- -var inputItems = [{"small":"12","medium":"12","large":"12","placeholder":"Портфолио"}];
+//- include components/_input

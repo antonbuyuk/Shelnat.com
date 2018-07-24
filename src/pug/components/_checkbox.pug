@@ -1,0 +1,8 @@
+for checkbox in checkboxItem
+    .form_item.checkbox
+        input(type="checkbox", name="", id=checkbox.id)
+        span
+        label(for=checkbox.id)= checkbox.text
+
+//- -var checkboxItem = [{"id":"test1","text":"Я даю согласие на обработку своих персональных данных"}];
+//- include components/_checkbox

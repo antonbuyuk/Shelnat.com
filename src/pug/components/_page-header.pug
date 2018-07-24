@@ -1,0 +1,15 @@
+header.header.header-fixed.header-black.header-transparent
+    .row.expanded.align-middle
+        .columns
+            include ./_burger
+        .columns.small-6.medium-4.large-2
+            - var logoItem = ['header_logo'];
+            include ./_logo
+        .columns
+            .flex.align-middle.align-right
+                include ./_lang
+                .stick.stick-dark.stick-30
+                - var socialItems = [{'black':'./templates/_ares/img/svg/youtube.svg','white':'./templates/_ares/img/svg/youtube-white.svg'},{'black':'./templates/_ares/img/svg/instagram.svg','white':'./templates/_ares/img/svg/instagram-white.svg'},{'black':'./templates/_ares/img/svg/vk.svg','white':'./templates/_ares/img/svg/vk-white.svg'}];
+                include ./_social
+    -var menuItems = ["Портфолио","Услуги и цены","Частые вопросы и ответы","Статьи","Видео","Обучение","Контакты"];
+    include ./_menu
