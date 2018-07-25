@@ -16,10 +16,35 @@ block content
 								br
 								| дизайна Shelnat
 							.title.text_size-extraLarge.uppercase.mb-9 Шелковской Наталии
-							a.link.link_size-large.link_color-black(href='#')
+							a.link.link_size-large.link_color-black.weight-bold(href='#')
 								| Смотреть проекты
 								object(data="./templates/_ares/img/svg/arrow_right.svg", type="")
-		#section-2.section(style="background-color: #fff;", data-anchor="portfolio") 2
+		#section-2.section(style="background-color: #fff;", data-anchor="portfolio")
+			.row.mb-3
+				.columns.small-12
+					.flex.align-middle
+						-var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Портфолио"}];
+						include components/_title
+						.stick.stick-grey.stick-32
+						a.link.link_size-large.link_color-grey(href='#')
+							| Все проекты
+							object(data="./templates/_ares/img/svg/arrow_right.svg", type="")
+			.row.expanded
+				.columns
+					.portfolio_carousel.owl-carousel.owl-theme
+						.item
+							include ./components/_portfolio
+						.item
+							include ./components/_portfolio
+						.item
+							include ./components/_portfolio
+						.item
+							include ./components/_portfolio
+						.item
+							include ./components/_portfolio
+						.item
+							include ./components/_portfolio
+					
 		#section-3.section(style="background-color: #f7f5f7;", data-anchor="design-project") 3 
 		#section-4.section.background_image.background-cover.background-100(style="background-image: url('./templates/_ares/img/png/bg-4.png');",data-anchor="services") 4
 		#section-5.section(style="background-color: #fff;",data-anchor="articles") 5

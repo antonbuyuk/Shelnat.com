@@ -4,13 +4,23 @@
     align-items: center;
 
     &_size{
+        
 
-        &-large{
+        &-medium{
             font-size: 1.125rem;
             font-weight: 700;
 
             object{
                 max-width: 2rem;
+                margin-left: 0.75rem;
+                transition: @transition-time;
+            }
+        }
+
+        &-large{
+            font-size: 1.125rem;
+
+            object{
                 margin-left: 0.75rem;
                 transition: @transition-time;
             }
@@ -24,10 +34,24 @@
 
             object{
                 fill: @black;
+                max-width: 2rem;
             }
 
             &:hover{
                 color: @black--hover;
+            }
+        }
+
+        &-grey{
+            color: #999;
+
+            object{
+                fill: #999;
+                max-width: 1.25rem;
+            }
+
+            &:hover{
+                color: #666;
             }
         }
     }

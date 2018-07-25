@@ -162,8 +162,8 @@ html.fp-enabled,
 .fp-slidesNav ul li {
     display: block;
     width: 14px;
-    height: 13px;
-    margin: 7px;
+    height: 0.625rem;
+    margin: 1.875rem 0.9375rem;
     position: relative;
 }
 

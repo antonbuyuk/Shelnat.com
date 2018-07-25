@@ -9,7 +9,6 @@ $(document).ready(function(){
     });    
 })
 
-
 // fullpage
 $(document).ready(function () {
     $('#fullpage').fullpage({
@@ -21,9 +20,9 @@ $(document).ready(function () {
         showActiveTooltip: false,
         autoScrolling: true,
         scrollHorizontally: true,
-        scrollingSpeed: 400,
+        scrollingSpeed: 600,
         fadingEffect: true,
-        // responsiveWidth: 640,
+        responsiveWidth: 640,
         licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
 
         onLeave: function(origin, destination, direction){
@@ -45,6 +44,23 @@ $(document).ready(function () {
         }
     });
 });
+
+$('.portfolio_carousel').owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        640: {
+            items: 2
+        },
+        1024: {
+            items: 4
+        }
+    }
+})
 
 $(window).ready(function () {
     $('body').css('opacity', '1');

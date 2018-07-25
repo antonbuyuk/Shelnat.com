@@ -643,6 +643,12 @@ screen and (min-width: 64em) {
     padding: 0 1.875rem;
 }
 
+@media (max-width: 40em){
+   .row.expanded{
+       padding: 0;
+   }
+}
+
 .row.expanded .row {
     margin-right: auto;
     margin-left: auto;
