@@ -88,7 +88,7 @@ html.fp-enabled,
     left: 15px;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    border-color: transparent #000;
 }
 
 .fp-controlArrow.fp-next {
@@ -186,10 +186,11 @@ html.fp-enabled,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span {
-    height: 12px;
-    width: 12px;
+    height: 0.625rem;
+    width: 0.625rem;
     margin: -6px 0 0 -6px;
     border-radius: 100%;
+    background-color: #000;
 }
 
 #fp-nav ul li a span,
@@ -197,13 +198,13 @@ html.fp-enabled,
     border-radius: 50%;
     position: absolute;
     z-index: 1;
-    height: 4px;
-    width: 4px;
+    height: 0.625rem;
+    width: 0.625rem;
     border: 0;
-    background: #333;
+    background: rgba(0,0,0,.3);
     left: 50%;
     top: 50%;
-    margin: -2px 0 0 -2px;
+    margin: -6px 0 0 -6px;
     -webkit-transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -o-transition: all 0.1s ease-in-out;
@@ -212,15 +213,16 @@ html.fp-enabled,
 
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span {
-    width: 10px;
-    height: 10px;
-    margin: -5px 0px 0px -5px;
+    height: 0.625rem;
+    width: 0.625rem;
+    margin: -6px 0 0 -6px;
 }
 
 #fp-nav ul li .fp-tooltip {
     position: absolute;
-    top: -2px;
-    color: #fff;
+    top: 0px;
+    right: 1.5rem;
+    color: #000;;
     font-size: 14px;
     font-family: arial, helvetica, sans-serif;
     white-space: nowrap;
@@ -241,7 +243,7 @@ html.fp-enabled,
 }
 
 #fp-nav ul li .fp-tooltip.fp-right {
-    right: 20px;
+    right: 1.875rem;
 }
 
 #fp-nav ul li .fp-tooltip.fp-left {

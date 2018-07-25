@@ -6,8 +6,28 @@ block vars
 
 block content
 	#fullpage
-		.section 1
-		.section 2
-		.section 3
-		.section 4
-		.section 5
+		#section-1.section.background_image.background-cover.background-100(style="background-image: url('./templates/_ares/img/png/bg-1.png');", data-anchor="main")
+			.row
+				.columns.small-12.medium-12.large-7
+					.main_block
+						object.snake(data="./templates/_ares/img/svg/snake.svg", type="")
+						.flex_column
+							.title.title_size-extraLarge.weight-bold.mb-2 Студия 
+								br
+								| дизайна Shelnat
+							.title.text_size-extraLarge.uppercase.mb-9 Шелковской Наталии
+							a.link.link_size-large.link_color-black(href='#')
+								| Смотреть проекты
+								object(data="./templates/_ares/img/svg/arrow_right.svg", type="")
+		#section-2.section(style="background-color: #fff;", data-anchor="portfolio") 2
+		#section-3.section(style="background-color: #f7f5f7;", data-anchor="design-project") 3 
+		#section-4.section.background_image.background-cover.background-100(style="background-image: url('./templates/_ares/img/png/bg-4.png');",data-anchor="services") 4
+		#section-5.section(style="background-color: #fff;",data-anchor="articles") 5
+		#section-6.section(style="background-color: #f7f5f7;", data-anchor="video") 6
+		#section-7.section(style="background-color: #fff;",data-anchor="education") 7
+		#section-8.section(style="background-color: #333;",data-anchor="faq") 8
+		#section-9.section(style="background-color: #fff;",data-anchor="contacts") 9
+	.footer_main
+		.row.expanded.align-middle
+			.column
+				.copirate © Shelnat 2018

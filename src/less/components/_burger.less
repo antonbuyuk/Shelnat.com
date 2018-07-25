@@ -7,6 +7,7 @@
     border-bottom: none;
     display: flex;
     flex-direction: column;
+    z-index: 9;
 
     &_spin{
         position: relative;
@@ -15,16 +16,16 @@
         display: block;
         transition: @transition-time;
 
-        &:nth-child(1){}
         &:nth-child(2){
             margin: auto 0;
         }
-        &:nth-child(3){}
     }
 
     &.is-active{
 
         .burger_spin{
+            background-color: @black--hover;
+            
             &:nth-child(1){
                 transform: translateY(0.5rem) rotate(45deg);
             }

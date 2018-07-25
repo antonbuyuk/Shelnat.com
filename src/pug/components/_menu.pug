@@ -1,8 +1,10 @@
 nav.menu_area
-    ul.menu
-        for menu in menuItems
-            li.menu_item
-                a(href="#").menu_link=menu
+    .row.expanded.align-middle
+        .columns
+            ul.menu
+                for menu in menuItems
+                    li.menu_item
+                        a(href="#").menu_link=menu
         
 //- -var menuItems = ["Портфолио","Услуги и цены","Частые вопросы и ответы","Статьи","Видео","Обучение","Контакты"];
 //- include ./_menu

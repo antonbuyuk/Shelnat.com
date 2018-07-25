@@ -49,5 +49,73 @@
                 }
             }
         }
+
+        .logo{
+
+            img{
+                &:nth-child(1){
+                    display: block;
+                }
+            }
+        }
+
+        .lang{
+        
+            &_item{
+                color: @black--hover;
+        
+                &:hover{
+                    color: #666;
+                }
+            }
+        }
+    }
+
+    &-white{
+
+        .burger{
+
+            &_spin{
+                background-color: @white;
+            }
+
+            &:hover{
+                .burger_spin{
+                    background-color: #666;
+                }
+            }
+        }
+
+        .social{
+
+            &_item{
+
+                img{
+                    &:nth-child(2){
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .logo{
+
+            img{
+                &:nth-child(2){
+                    display: block;
+                }
+            }
+        }
+
+        .lang{
+        
+            &_item{
+                color: @white;
+        
+                &:hover{
+                    color: #666;
+                }
+            }
+        }
     }
 }

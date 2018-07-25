@@ -1,0 +1,46 @@
+.link{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+
+    &_size{
+
+        &-large{
+            font-size: 1.125rem;
+            font-weight: 700;
+
+            object{
+                max-width: 2rem;
+                margin-left: 0.75rem;
+                transition: @transition-time;
+            }
+        }
+    }
+
+    &_color{
+
+        &-black{
+            color: @black;
+
+            object{
+                fill: @black;
+            }
+
+            &:hover{
+                color: @black--hover;
+            }
+        }
+    }
+
+    &:hover{
+
+        object{
+            margin-left: 1rem;
+        }
+    }
+
+    object{
+        width: 100%;
+        display: block;
+    }
+}

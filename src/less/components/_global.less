@@ -43,6 +43,25 @@ body {
 	opacity: 0;
 	padding: 1rem;
 	background-color: #e1d8de;
+
+	&:before,
+	&:after{
+		content: '';
+		width: 1rem;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		background-color: @main--hover;
+		z-index: 10;
+	}
+
+	&:before{
+		left: 0;
+	}
+
+	&:after{
+		right: 0;
+	}
 }
 
 a {
@@ -129,9 +148,9 @@ p {
 }
 
 .copirate{
-	color: #999;
-	font-size: 0.625rem;
-	font-weight: 300;
+	color: @black--hover;
+	font-size: 0.875rem;
+	font-weight: 400;
 }
 
 .section{
@@ -142,6 +161,26 @@ p {
 .wrapper{
 	width: 100%;
 	height: 100%;
+
+	&:before,
+	&:after{
+		content: '';
+		height: 1rem;
+		width: 100vw;
+		position: fixed;
+		left: 0;
+		right: 0;
+		background-color: @main--hover;
+		z-index: 5;
+	}
+
+	&:before{
+		top: 0;
+	}
+
+	&:after{
+		bottom: 0;
+	}
 }
 
 .stick{
@@ -156,5 +195,48 @@ p {
 
 	&-30{
 		height: 1.875rem;
+	}
+}
+
+.fullpage{
+
+	&-wrapper{
+		height: ~'calc(100vh - 2rem)' !important;
+	}
+}
+
+.fp-viewing-services,
+.fp-viewing-faq{
+	#fp-nav ul {
+
+		li {
+	
+			a {
+				span{
+					background-color: rgba(255,255,255,0.55);
+				}
+
+				&.active{
+
+					span{
+						background-color: rgba(255,255,255,1);
+					}
+				}
+			}
+		}
+	}
+}
+
+.snake{
+	max-width: 16.875rem;
+}
+
+.main_block{
+	position: relative;
+
+	.flex_column{
+		position: absolute;
+		top: 7rem;
+		left: 3.25rem;
 	}
 }
