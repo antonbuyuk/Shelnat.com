@@ -1,10 +1,16 @@
 nav.menu_area
     .row.expanded.align-middle
-        .columns
+        .columns.small-12
             ul.menu
                 for menu in menuItems
                     li.menu_item
                         a(href="#").menu_link=menu
+        .columns.small-12.hidden-large
+            .flex.align-middle.align-left.mt-2
+                include ./_lang
+                .stick.stick-dark.stick-30
+                - var socialItems = [{'black':'./templates/_ares/img/svg/youtube.svg','white':'./templates/_ares/img/svg/youtube-white.svg'},{'black':'./templates/_ares/img/svg/instagram.svg','white':'./templates/_ares/img/svg/instagram-white.svg'},{'black':'./templates/_ares/img/svg/vk.svg','white':'./templates/_ares/img/svg/vk-white.svg'}];
+                include ./_social
         
 //- -var menuItems = ["Портфолио","Услуги и цены","Частые вопросы и ответы","Статьи","Видео","Обучение","Контакты"];
 //- include ./_menu

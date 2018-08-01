@@ -162,6 +162,15 @@ p {
 	position: relative;
 	width: 100%;
 
+	.flex-wrap{
+
+		.title{
+			@media (max-width: 63.975em){
+				margin-right: 1rem;
+			}
+		}
+	}
+
 	@media (min-width: 40em) and (max-width: 63.975em){
 		padding: 5rem 0;
 		height: auto !important;
@@ -173,6 +182,11 @@ p {
 
 	@media (max-width: 39.975em){
 		padding: 5rem 0;
+		height: auto !important;
+
+		.fp-tableCell{
+			height: auto !important;
+		}
 	}
 }
 
@@ -378,6 +392,19 @@ p {
 			@media (max-width: 39.975em){
 				min-width: 10rem
 			}
+		}
+	}
+}
+
+#section{
+
+	&-1{
+		@media (min-width: 40em) and (max-width: 63.975em){
+    		background-position: -54rem center; 
+		}
+
+		@media (max-width: 39.975em){
+    		
 		}
 	}
 }
