@@ -1,0 +1,30 @@
+.contacts_block
+    -var titleItem = [{"size":"large","color":"black","weight":"bold mb-4","text":"Контакты"}];
+    include ./_title
+    .contacts_item
+        .contacts_img
+            img(src="./templates/_ares/img/svg/placeholder.svg", alt="")
+        .contacts_text Москва
+    .contacts_item
+        .contacts_img
+            img(src="./templates/_ares/img/svg/mail.svg", alt="")
+        .contacts_container
+            .contacts_title Заказать дизайн-проект:
+            a(href="mailto", title="title").contacts_link Hello@shelnat.com
+    .contacts_item
+        .contacts_img
+        .contacts_container
+            .contacts_title Поставщикам:
+            a(href="mailto", title="title").contacts_link Supply@shelnat.com
+    .contacts_item
+        .contacts_img
+        .contacts_container
+            .contacts_title Сотрудничество:
+            a(href="mailto", title="title").contacts_link Partner@shelnat.com
+    .contacts_item
+        .contacts_img
+        .contacts_container
+            .contacts_title Вакансии:
+            a(href="mailto", title="title").contacts_link CV@shelnat.com
+    - var socialItems = [{'black':'./templates/_ares/img/svg/youtube.svg','white':'./templates/_ares/img/svg/youtube-white.svg'},{'black':'./templates/_ares/img/svg/instagram.svg','white':'./templates/_ares/img/svg/instagram-white.svg'},{'black':'./templates/_ares/img/svg/vk.svg','white':'./templates/_ares/img/svg/vk-white.svg'}];
+    include ./_social

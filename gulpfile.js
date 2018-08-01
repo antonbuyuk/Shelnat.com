@@ -30,7 +30,7 @@ var path = {
 		pug: 'src/pug/**/[^_]*.pug',
 		css: 'src/less/styles.less',
 		js: 'src/js/app.js',
-		image: 'src/img/**/*',
+		image: 'src/img/**/**/*',
 		fonts: 'src/fonts/**/*',
 		json: 'src/json/*',
 		htaccess: 'src/.htaccess'
@@ -39,7 +39,7 @@ var path = {
 		pug: 'src/pug/**/*',
 		css: 'src/less/**/*',
 		js: 'src/js/**/*',
-		image: 'src/img/**/*',
+		image: 'src/img/**/**/*',
 		fonts: 'src/fonts/**/*',
 		htaccess: 'src/.htaccess',
 	},
@@ -65,8 +65,10 @@ gulp.task('css:build', function(){
   return gulp.src([
         ('src/less/vendor/foundation/foundation.css'),
         ('src/less/vendor/owl-carousel/owl.carousel.css'),
+        ('src/less/vendor/owl-carousel/animate.css'),
         ('src/less/vendor/fancybox/jquery.fancybox.css'),
         ('src/less/vendor/fullpage/fullpage.css'),
+        ('src/less/vendor/fakescroll/fakescroll.css'),
         ('src/less/vendor/form-styler/jquery.formstyler.css'),
         ('src/less/vendor/form-styler/jquery.formstyler.theme.css'),
 	    (path.src.css)
@@ -84,11 +86,13 @@ gulp.task('css:build', function(){
 gulp.task('js:build', function(){
   return gulp.src([
     ('src/js/vendor/jquery.js'),
+    ('src/js/vendor/jquery.mousewheel-3.0.6.js'),
+    ('src/js/vendor/fullpage.js'),
     ('src/js/vendor/foundation.js'),
     ('src/js/vendor/owl.carousel.js'),
     ('src/js/vendor/jquery.fancybox.js'),
-    ('src/js/vendor/fullpage.js'),
     ('src/js/vendor/jquery.formstyler.js'),
+    ('src/js/vendor/fakescroll.js'),
 	(path.src.js),
 	])
     .pipe(concat('app.min.js'))

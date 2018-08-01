@@ -26,6 +26,10 @@
                 opacity: 1;
             }
         }
+
+        @media (max-width: 39.975em){
+            width: ~'calc(100% - 2rem)';
+        }
     }
 
     &_item{
@@ -40,6 +44,11 @@
         line-height: 3.75rem;
         font-weight: 700;
         color: @black;
+
+        @media (max-width: 39.975em){
+            font-size: 1.5rem;
+            line-break: 3rem;
+        }
 
         &:hover{
             color: @main;

@@ -20,11 +20,15 @@ html {
 	}
 
 	@media (min-width: 64em) and (max-width: 74.975em){
-		font-size: 73.9%;
+		font-size: 75%;
 	}
 
 	@media (min-width: 40em) and (max-width: 41.975em){
 		font-size: 90%;
+	}
+
+	@media (max-width: 39.975em){
+		font-size: 80%;
 	}
 
 }
@@ -41,6 +45,7 @@ body {
 	flex-direction: column;
 	min-width: 320px;
 	opacity: 0;
+	transition: 1s ease-in-out;
 	padding: 1rem;
 	background-color: #e1d8de;
 
@@ -156,6 +161,19 @@ p {
 .section{
 	position: relative;
 	width: 100%;
+
+	@media (min-width: 40em) and (max-width: 63.975em){
+		padding: 5rem 0;
+		height: auto !important;
+
+		.fp-tableCell{
+			height: auto !important;
+		}
+	}
+
+	@media (max-width: 39.975em){
+		padding: 5rem 0;
+	}
 }
 
 .wrapper{
@@ -187,6 +205,10 @@ p {
 	position: relative;
 	width: 1px;
 	height: 100%;
+
+	@media (max-width: 39.975em){
+		display: none;
+	}
 	
 	
 	&-dark{
@@ -197,6 +219,10 @@ p {
 		background-color: #999;
 	}
 
+	&-white{
+		background-color: @white;
+	}
+
 	&-30{
 		height: 1.875rem;
 		margin: 0 0.9375rem;
@@ -205,6 +231,11 @@ p {
 	&-32{
 		height: 2rem;
 		margin: 0 2.5rem;
+	}
+
+	&-46{
+		height: 2.875rem;
+		margin: 0 4.25rem;
 	}
 }
 
@@ -235,18 +266,118 @@ p {
 			}
 		}
 	}
+
+	.copirate{
+		color: @white;
+	}
 }
 
 .snake{
 	max-width: 16.875rem;
+	width: 100%;
+	display: block;
 }
 
 .main_block{
 	position: relative;
+	transition: @transition-time;
 
 	.flex_column{
 		position: absolute;
 		top: 7rem;
 		left: 3.25rem;
+		transition: @transition-time;
+
+		@media (max-width: 39.975em){
+			top: 5rem;
+			left: 2rem;
+		}
+	}
+}
+
+.design{
+
+	&_card{
+		position: relative;
+		width: 100%;
+		background-color: rgba(255,255,255,.55);
+		border: 3px solid @main;
+		padding: 2.5rem 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.link{
+			margin-bottom: 1.5rem;
+		}
+
+		@media (max-width: 63.975em){
+			margin-top: 2rem;
+		}
+	}
+
+	&_list{
+		list-style: none;
+		padding-left: 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		li{
+			font-size: 1rem;
+			margin: 0.5rem 0;
+		}
+	}
+}
+
+.date{
+	color: #666;
+	font-size: 0.875rem;
+	display: block;
+	transition: 0.35s ease;
+}
+
+#videoList{
+	height: 27.07rem;
+
+	@media (max-width: 63.975em){
+		height: auto;
+	}
+}
+
+.video{
+
+	&_list{
+
+		@media (max-width: 63.975em){
+			margin-top: 1.875rem;
+
+			.mCSB_container{
+				display: flex
+			}
+		}
+
+		&_item{
+			margin-bottom: 1.25rem;
+			max-width: 16.875rem;
+			width: 100%;
+			display: block;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+
+			@media (max-width: 63.975em){
+				margin-bottom: 0;
+				margin-right: 1.875rem;
+				min-width: 16.875rem;
+			}
+
+			@media (max-width: 39.975em){
+				min-width: 10rem
+			}
+		}
 	}
 }

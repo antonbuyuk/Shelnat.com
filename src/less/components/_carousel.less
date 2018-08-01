@@ -1,26 +1,80 @@
 .owl-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.75rem;
 
     .owl-dot{
+        position: relative;
+        display: block;
+        margin: 0.75rem .5rem;
 
-        &:last-child{}
-
-        span{}
+        span{
+            width: 0.625rem;
+            height: 0.625rem;
+            display: block;
+            background-color: #b2b2b2;
+        }
 
         &.active{
 
-            span{}
+            span{
+                background-color: #000;
+            }
         }
     }
 }
 
 .owl-nav{
-
     button{
+        transition: @transition-time;
+        position: absolute;
+        bottom: 0;
 
-        &:hover{}
+        img{
+            height: 1.875rem;
+        }
 
-        &.owl-prev{}
+        &:hover{
+            opacity: 0.6;
+        }
 
-        &.owl-next{}
+        &.owl-prev{
+            left: 50%;
+            transform: translate(-200%);
+
+            @media(max-width: 63.975em){
+                transform: translate(-400%);
+            }
+        }
+
+        &.owl-next{
+            right: 50%;
+            transform: translate(200%);
+
+            @media(max-width: 63.975em){
+                transform: translate(400%);
+            }
+        }
+    }
+}
+
+.carousel{
+
+    &_project{
+        position: relative;
+
+        &:before{
+            content: '';
+            position: absolute;
+            left: 4.375rem;
+            top: 4.375rem;
+            border: 3px solid @black;
+            width: 100%;
+            height: ~'calc(100% - 4rem)';
+        }
+
+        .owl-dots{
+            margin-top: 1.875rem;
+        }
     }
 }

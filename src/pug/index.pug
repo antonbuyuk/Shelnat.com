@@ -10,7 +10,7 @@ block content
 			.row
 				.columns.small-12.medium-12.large-7
 					.main_block
-						object.snake(data="./templates/_ares/img/svg/snake.svg", type="")
+						object.snake(data="./templates/_ares/img/svg/snake.svg", type="image/svg+xml")
 						.flex_column
 							.title.title_size-extraLarge.weight-bold.mb-2 Студия 
 								br
@@ -18,17 +18,17 @@ block content
 							.title.text_size-extraLarge.uppercase.mb-9 Шелковской Наталии
 							a.link.link_size-large.link_color-black.weight-bold(href='#')
 								| Смотреть проекты
-								object(data="./templates/_ares/img/svg/arrow_right.svg", type="")
+								i.i-arrow_right
 		#section-2.section(style="background-color: #fff;", data-anchor="portfolio")
 			.row.mb-3
 				.columns.small-12
-					.flex.align-middle
+					.flex-wrap.align-middle
 						-var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Портфолио"}];
 						include components/_title
 						.stick.stick-grey.stick-32
 						a.link.link_size-large.link_color-grey(href='#')
 							| Все проекты
-							object(data="./templates/_ares/img/svg/arrow_right.svg", type="")
+							i.i-arrow_right
 			.row.expanded
 				.columns
 					.portfolio_carousel.owl-carousel.owl-theme
@@ -43,15 +43,154 @@ block content
 						.item
 							include ./components/_portfolio
 						.item
-							include ./components/_portfolio
-					
-		#section-3.section(style="background-color: #f7f5f7;", data-anchor="design-project") 3 
-		#section-4.section.background_image.background-cover.background-100(style="background-image: url('./templates/_ares/img/png/bg-4.png');",data-anchor="services") 4
-		#section-5.section(style="background-color: #fff;",data-anchor="articles") 5
-		#section-6.section(style="background-color: #f7f5f7;", data-anchor="video") 6
-		#section-7.section(style="background-color: #fff;",data-anchor="education") 7
-		#section-8.section(style="background-color: #333;",data-anchor="faq") 8
-		#section-9.section(style="background-color: #fff;",data-anchor="contacts") 9
+							include ./components/_portfolio				
+		#section-3.section(style="background-color: #f7f5f7;", data-anchor="design-project")
+			.row
+				.columns.hidden-small.hidden-medium.large-5
+					.carousel_project.owl-carousel.owl-theme
+						.item
+							img(src="./templates/_ares/img/jpg/bg-5.jpg", alt="")
+						.item
+							img(src="./templates/_ares/img/jpg/bg-5.jpg", alt="")
+						.item
+							img(src="./templates/_ares/img/jpg/bg-5.jpg", alt="")
+						.item
+							img(src="./templates/_ares/img/jpg/bg-5.jpg", alt="")
+				.columns.small-12.medium-12.large-6.large-offset-1.flex-column
+					.title.color-grey.uppercase.mb-2 эстетика в мелочах
+					.title.title_size-large.color-black.weight-bold.mb-3 Пример полного дизайн-проекта
+					.text.color-black
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+					.flex-wrap.align-middle.mt-auto
+						a(href="#").link.link-border.uppercase состав проекта
+						.stick.stick-dark.stick-46
+						a(href="#").link.link-border.uppercase Пример рабочей документации
+		#section-4.section.background_image.background-cover.background-100(style="background-image: url('./templates/_ares/img/jpg/bg-4.jpg');",data-anchor="services")
+			.row.align-middle
+				.columns.small-12.medium-12.large-7
+					.flex-wrap.align-middle.mb-3
+						-var titleItem = [{"size":"large","color":"white","weight":"bold","text":"Услуги и цены"}];
+						include components/_title
+						.stick.stick-white.stick-32
+						a.link.link_size-large.link_color-white(href='#') Подробнее
+							i.i-arrow_right
+					.text.color-white.mb-3
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+					-var btnItem = [{"href":"#","size":"medium","type":"floatWhite","text":"узнать больше"}];
+					include components/_btn
+				.columns.small-12.medium-8.large-4.large-offset-1
+					include components/_designCard
+		#section-5.section(style="background-color: #fff;",data-anchor="articles")
+			.row.mb-3
+				.columns.small-12
+					.flex-wrap.align-middle
+						-var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Статьи"}];
+						include components/_title
+						.stick.stick-grey.stick-32
+						a.link.link_size-large.link_color-grey(href='#')
+							| Все статьи
+							i.i-arrow_right
+			.row.expanded
+				.columns
+					.portfolio_carousel.owl-carousel.owl-theme
+						.item
+							include ./components/_articles
+						.item
+							include ./components/_articles
+						.item
+							include ./components/_articles
+						.item
+							include ./components/_articles
+						.item
+							include ./components/_articles
+						.item
+							include ./components/_articles	
+		#section-6.section(style="background-color: #f7f5f7;", data-anchor="video")
+			.row.mb-3
+				.columns.small-12
+					.flex-wrap.align-middle
+						-var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Видео"}];
+						include components/_title
+						.stick.stick-grey.stick-32
+						a.link.link_size-large.link_color-grey(href='#')
+							| Все видео
+							i.i-arrow_right
+			.row
+				.columns.small-12.medium-12.large-8
+					.video_container
+						.iframe_parents
+							iframe(src="https://www.youtube.com/embed/7dDfGcns_YQ", frameborder="0", allowfullscreen, controls='2', modestbranding)
+				.columns.small-12.medium-12.large-4
+					#videoList.video_list(data-simplebar-auto-hide="false")
+						a.video_list_item(href='#', data-src='https://www.youtube.com/embed/M3cc6WRF4Lw')
+							img(src="./templates/_ares/img/jpg/unnamed.jpg", alt="")
+						a.video_list_item(href='#', data-src='https://www.youtube.com/embed/M3cc6WRF4Lw')
+							img(src="./templates/_ares/img/jpg/unnamed.jpg", alt="")
+						a.video_list_item(href='#', data-src='https://www.youtube.com/embed/M3cc6WRF4Lw')
+							img(src="./templates/_ares/img/jpg/unnamed.jpg", alt="")
+						a.video_list_item(href='#', data-src='https://www.youtube.com/embed/M3cc6WRF4Lw')
+							img(src="./templates/_ares/img/jpg/unnamed.jpg", alt="")
+						a.video_list_item(href='#', data-src='https://www.youtube.com/embed/M3cc6WRF4Lw')
+							img(src="./templates/_ares/img/jpg/unnamed.jpg", alt="")
+		#section-7.section(style="background-color: #fff;",data-anchor="education")
+			.row.mb-3
+				.columns.small-12
+					.flex-wrap.align-middle
+						-var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Обучение"}];
+						include components/_title
+						.stick.stick-grey.stick-32
+						a.link.link_size-large.link_color-grey(href='#')
+							| Все курсы
+							i.i-arrow_right
+			.row
+				.columns
+					.courses_carousel.owl-carousel.owl-theme
+						.item
+							include ./components/_courses
+						.item
+							include ./components/_courses
+						.item
+							include ./components/_courses
+						.item
+							include ./components/_courses
+		#section-8.section(style="background-color: #333;",data-anchor="faq")
+			.row.mb-3
+				.columns.small-12
+					.flex-wrap.align-middle
+						-var titleItem = [{"size":"large","color":"white","weight":"bold","text":"Частые вопросы и ответы"}];
+						include components/_title
+						.stick.stick-grey.stick-32
+						a.link.link_size-large.link_color-grey(href='#')
+							| Все вопросы
+							i.i-arrow_right
+			.row
+				.columns.small-12.medium-12.large-6
+					-var accardionsItems = [{"title":"Когда можно начинать разработку дизайн-проекта?","text":["test1","test2"]},{"title":"Когда можно начинать разработку дизайн-проекта?","text":["test1","test2"]},{"title":"Когда можно начинать разработку дизайн-проекта?","text":["Срок процесса ремонта может зависеть от времени года, состояния объекта, состава строительной бригады и количества смен, сложности проекта, заказываете ли Вы его заранее до сдачи дома, а также от конкретных конструктивных решений и конечно, от метража. Адекватно оценить сроки строители смогут только после подготовки дизайн-проекта, когда будет понятен объем предстоящих работ и ясны все решения. Также, на общий срок готовности может влиять необходимость в ожидании заказных позиций, как чистовых материалов (около 3 мес. из Европы, или 6 мес. из США), так и всей мебели на заказ (в т.ч. кухни)."]}];
+					include components/_accardion
+				.columns.small-12.medium-12.large-6
+					-var accardionsItems = [{"title":"Когда можно начинать разработку дизайн-проекта?","text":["test1","test2"]},{"title":"Когда можно начинать разработку дизайн-проекта?","text":["test1","test2"]},{"title":"Когда можно начинать разработку дизайн-проекта?","text":["Срок процесса ремонта может зависеть от времени года, состояния объекта, состава строительной бригады и количества смен, сложности проекта, заказываете ли Вы его заранее до сдачи дома, а также от конкретных конструктивных решений и конечно, от метража. Адекватно оценить сроки строители смогут только после подготовки дизайн-проекта, когда будет понятен объем предстоящих работ и ясны все решения. Также, на общий срок готовности может влиять необходимость в ожидании заказных позиций, как чистовых материалов (около 3 мес. из Европы, или 6 мес. из США), так и всей мебели на заказ (в т.ч. кухни)."]}];
+					include components/_accardion
+			
+		#section-9.section(style="background-color: #fff;",data-anchor="contacts")
+			.row
+				.columns.small-12.medium-12.large-7
+					.flex-wrap.align-middle.mb-4
+						-var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Форма заказа"}];
+						include components/_title
+					.text.color-grey.mb-1
+						p Уточнить подробности и заказать дизайн-проект:
+					form(action="", data-abide, novalidate)
+						-var inputItems = [{"small":"12","medium":"6","large":"6","placeholder":"Портфолио"},{"small":"12","medium":"6","large":"6","placeholder":"Телефон*"},{"small":"12","medium":"6","large":"6","placeholder":"E-mail*"},{"small":"12","medium":"6","large":"6","placeholder":"Объект"}];
+						include components/_input
+						include components/_textarea
+						.row
+							.columns.flex-row
+								-var checkboxItem = [{"id":"test1","text":"Я даю согласие на обработку своих персональных данных"}];
+								include components/_checkbox
+								-var btnItem = [{"href":"#","size":"medium","type":"black ml-auto","text":"Отправить"}];
+								include components/_btn
+				.columns.small-12.medium-8.large-4.large-offset-1
+					include components/_contacts
 	.footer_main
 		.row.expanded.align-middle
 			.column
