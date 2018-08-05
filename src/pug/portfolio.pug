@@ -1,0 +1,32 @@
+extends templates/_layout
+
+block vars
+    - var page = "default_page";
+    - var title = "portfolio";
+
+block content
+    .row
+        .columns
+            include ./components/_breadcrumbs
+    .row.mb-4
+        .columns.small-12
+            .flex-wrap.align-middle
+                -var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Портфолио"}];
+                include components/_title
+    .row.expanded
+        .columns.small-12.medium-6.large-3
+            include ./components/_portfolio
+        .columns.small-12.medium-6.large-3
+            include ./components/_portfolio
+        .columns.small-12.medium-6.large-3
+            include ./components/_portfolio
+        .columns.small-12.medium-6.large-3
+            include ./components/_portfolio
+        .columns.small-12.medium-6.large-3
+            include ./components/_portfolio
+        .columns.small-12.medium-6.large-3
+            include ./components/_portfolio
+        .columns.small-12.medium-6.large-3
+            include ./components/_portfolio
+        .columns.small-12.medium-6.large-3
+            include ./components/_portfolio

@@ -7,6 +7,7 @@
         display: block;
         width: 100%;
         overflow: hidden;
+        margin-bottom: 1.875rem;
 
         &:hover{
 
@@ -84,6 +85,58 @@
             font-size: 80%;
             transition: transform 0.35s ease;
             margin-left: 0.5rem;
+        }
+    }
+
+    &_pagination{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin-top: 4rem;
+
+        &_item{
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.125rem;
+
+            i{
+                font-size: 0.875rem;
+                transition: @transition-time;
+            }
+
+            &:hover{
+                color: @main;
+            }
+
+            &:first-child{
+
+                i{
+                    margin-right: 1rem;
+                }
+
+                &:hover{
+
+                    i{
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+
+            &:last-child{
+                
+                i{
+                    margin-left: 1rem;
+                }
+
+                &:hover{
+
+                    i{
+                        transform: translateX(50%);
+                    }
+                }
+            }
         }
     }
 }

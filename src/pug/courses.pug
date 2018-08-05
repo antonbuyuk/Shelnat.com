@@ -1,0 +1,24 @@
+extends templates/_layout
+
+block vars
+    - var page = "default_page";
+    - var title = "courses";
+
+block content
+    .row
+        .columns
+            include ./components/_breadcrumbs
+    .row.mb-4
+        .columns.small-12
+            .flex-wrap.align-middle
+                -var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Обучение"}];
+                include components/_title
+    .row
+        .columns.small-12.medium-6
+            include ./components/_courses
+        .columns.small-12.medium-6
+            include ./components/_courses
+        .columns.small-12.medium-6
+            include ./components/_courses
+        .columns.small-12.medium-6
+            include ./components/_courses

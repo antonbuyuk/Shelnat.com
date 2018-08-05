@@ -1,1 +1,27 @@
 footer.footer
+    .row.expanded
+        .column
+            .footer_container
+                .row.align-middle
+                    .columns.small-6.medium-2.large-2
+                        - var logoItem = ['footer_logo'];
+                        include ./_logo
+                    .columns.small-6.medium-7.large-6.large-offset-1
+                        nav(role="navigarion")
+                            ul.footer_menu.menu
+                                li.menu_item
+                                    a(href="#").menu_link Портфолио
+                                li.menu_item
+                                    a(href="#").menu_link Цены
+                                li.menu_item
+                                    a(href="#").menu_link Статьи
+                                li.menu_item
+                                    a(href="#").menu_link Видео
+                                li.menu_item
+                                    a(href="#").menu_link Обучение
+                                li.menu_item
+                                    a(href="#").menu_link FAQ
+                                li.menu_item
+                                    a(href="#").menu_link Контакты
+                    .columns.small-12.medium-3.large-2.large-offset-1
+                        .copirate.text-right © Shelnat 2018

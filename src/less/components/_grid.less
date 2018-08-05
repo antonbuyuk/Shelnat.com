@@ -1,0 +1,120 @@
+.grid{
+    width: ~'calc(100% - 7rem)';
+    margin-top: 2.25rem;
+    margin-left: 7rem;
+
+    @media (max-width: 63.975em){
+        width: 100%;
+        margin-left: 0;
+    }
+
+    &.is-active{
+        width: ~'calc(100% - 46rem)';
+        margin-left: 46rem;
+
+        .grid-sizer,
+        .grid-item{
+            width: 50%;
+        }
+    }
+
+    &_sticky{
+        position: sticky;
+        top: 1rem;
+        transition: transform .5s .6s ease,opacity .5s .6s ease;
+        transform: translateY(3rem);
+        opacity: 0;
+
+         @media (max-width: 63.975em){
+            position: relative;
+            top: 0;
+            opacity: 1;
+            transform: none;
+         }
+    }
+
+    &-item{
+        width: 33%;
+        padding: 0.5rem;
+
+        @media (max-width: 39.975em){
+            width: 50%;
+        }
+    }
+
+    &-sizer{
+        width: 33%;
+
+        @media (max-width: 39.975em){
+            width: 50%;
+        }
+    }
+
+    &_information{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: @black;
+        z-index: 5;
+        height: ~'calc(100% - 0.5rem)';
+        width: 100%;
+        max-width: 47.5rem;
+        transform: translateX(-40.5rem);
+        transition: all .6s ease;
+        cursor: pointer;
+
+        @media (max-width: 63.975em){
+            position: relative;
+            width: 100%;
+            height: auto;
+            max-width: none;
+            transform: none;
+            padding-bottom: 5rem;
+        }
+
+        &:after{
+            content: 'описание';
+            color: @white;
+            transform: rotate(270deg) translateY(-50%);
+            position: sticky;
+            right: 0;
+            top: 50%;
+            cursor: pointer;
+            display: block;
+            font-weight: 500;
+            font-size: 1.125rem;
+            text-transform: uppercase;
+            transition: all .6s ease;
+            margin-left: 43rem;
+
+            @media (max-width: 63.975em){
+                display: none;
+            }
+        }
+
+        &.is-active{
+            transform: translateX(0rem);
+
+            &:after{
+                opacity: 0;
+            }
+
+            .grid_sticky{
+                transform: translate(0);
+                opacity: 1;
+            }
+        }
+
+        .text_area{
+            
+            p{
+                color: #bbb;
+            }
+        }
+    }
+
+    &_container{
+        position: relative;
+        width: 100%;
+    }
+}

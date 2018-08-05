@@ -13,7 +13,38 @@ $(document).ready(function(){
 
         console.log(src);
         $('.video_container iframe').attr('src', src);
-    })
+    });
+
+    if ($('.grid').length){
+        // init Masonry
+        var $grid = $('.grid').masonry({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            columnWidth: '.grid-sizer'
+        });
+        // layout Masonry after each image loads
+        $grid.imagesLoaded().progress(function () {
+            $grid.masonry();
+        });
+    }
+
+    if ($(window).width() > '1024') {
+        $('.grid_information').click(function () {
+            $(this).toggleClass('is-active');
+            $('.grid').toggleClass('is-active');
+
+            // init Masonry
+            var $grid = $('.grid').masonry({
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                columnWidth: '.grid-sizer'
+            });
+            // layout Masonry after each image loads
+            $grid.imagesLoaded().progress(function () {
+                $grid.masonry();
+            });
+        })
+    }
 })
 
 $(window).on("load", function () {
@@ -29,6 +60,7 @@ $(window).on("load", function () {
         });
     }
 });
+
 
 $('.portfolio_carousel').owlCarousel({
     loop: true,

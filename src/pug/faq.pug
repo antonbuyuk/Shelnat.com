@@ -1,0 +1,41 @@
+extends templates/_layout
+
+block vars
+    - var page = "default_page";
+    - var title = "courses";
+
+block content
+    .row
+        .columns
+            include ./components/_breadcrumbs
+    .row.mb-4
+        .columns.small-12
+            .flex-wrap.align-middle
+                -var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Частые вопросы и ответы"}];
+                include components/_title
+    .row.mb-5
+        .columns.small-12.medium-12.large-6
+            -var accardionsItems = [{"title":"Когда можно начинать разработку дизайн-проекта?","text":["test1","test2"]},{"title":"Когда можно начинать разработку дизайн-проекта?","text":["test1","test2"]},{"title":"Когда можно начинать разработку дизайн-проекта?","text":["Срок процесса ремонта может зависеть от времени года, состояния объекта, состава строительной бригады и количества смен, сложности проекта, заказываете ли Вы его заранее до сдачи дома, а также от конкретных конструктивных решений и конечно, от метража. Адекватно оценить сроки строители смогут только после подготовки дизайн-проекта, когда будет понятен объем предстоящих работ и ясны все решения. Также, на общий срок готовности может влиять необходимость в ожидании заказных позиций, как чистовых материалов (около 3 мес. из Европы, или 6 мес. из США), так и всей мебели на заказ (в т.ч. кухни)."]}];
+            include components/_accardion
+        .columns.small-12.medium-12.large-6
+            -var accardionsItems = [{"title":"Когда можно начинать разработку дизайн-проекта?","text":["test1","test2"]},{"title":"Когда можно начинать разработку дизайн-проекта?","text":["test1","test2"]},{"title":"Когда можно начинать разработку дизайн-проекта?","text":["Срок процесса ремонта может зависеть от времени года, состояния объекта, состава строительной бригады и количества смен, сложности проекта, заказываете ли Вы его заранее до сдачи дома, а также от конкретных конструктивных решений и конечно, от метража. Адекватно оценить сроки строители смогут только после подготовки дизайн-проекта, когда будет понятен объем предстоящих работ и ясны все решения. Также, на общий срок готовности может влиять необходимость в ожидании заказных позиций, как чистовых материалов (около 3 мес. из Европы, или 6 мес. из США), так и всей мебели на заказ (в т.ч. кухни)."]}];
+            include components/_accardion
+    .row.align-middle
+        .columns.small-12.medium-12.large-7
+            .flex-wrap.align-middle.mb-4
+                -var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Форма заказа"}];
+                include components/_title
+            .text.color-grey.mb-1
+                p Уточнить подробности и заказать дизайн-проект:
+            form(action="", data-abide, novalidate)
+                -var inputItems = [{"small":"12","medium":"6","large":"6","placeholder":"Портфолио"},{"small":"12","medium":"6","large":"6","placeholder":"Телефон*"},{"small":"12","medium":"6","large":"6","placeholder":"E-mail*"},{"small":"12","medium":"6","large":"6","placeholder":"Объект"}];
+                include components/_input
+                include components/_textarea
+                .row
+                    .columns.flex-row
+                        -var checkboxItem = [{"id":"test1","text":"Я даю согласие на обработку своих персональных данных"}];
+                        include components/_checkbox
+                        -var btnItem = [{"href":"#","size":"medium","type":"black ml-auto","text":"Отправить"}];
+                        include components/_btn
+        .columns.small-12.medium-8.large-4.large-offset-1
+            include components/_contacts

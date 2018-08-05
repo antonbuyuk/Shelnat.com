@@ -34,6 +34,62 @@
 			font-size: 1.5rem;
 		}
 	}
+
+	&_area{
+
+		p{
+
+			img{
+				margin-bottom: 1.5rem;
+			}
+
+			a{
+				color: @main;
+				transition: @transition-time;
+
+				&:hover{
+					// color: @main--hover;
+				}
+			}
+		}
+
+		ol{
+			font-size: 1rem;
+			line-height: 1.5rem;
+			margin: 0.5rem 0 2rem;
+			padding-left: 1.125rem;
+
+			li{
+				color: #666;
+				position: relative;
+			}
+		}
+
+		ul{
+			padding-left: 0;
+			font-size: 1rem;
+			line-height: 1.5rem;
+			list-style: none;
+			margin: 0.5rem 0 2rem;
+
+			li{
+				color: #666;
+				padding-left: 1.875rem;
+				position: relative;
+
+				&:before{
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 0.5rem;
+					background-color: @main;
+					width: 0.5rem;
+					height: 0.5rem;
+					display: block;
+				}
+			}
+		}
+	}
 }
 
 .uppercase{

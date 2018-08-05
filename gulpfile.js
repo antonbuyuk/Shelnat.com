@@ -93,6 +93,8 @@ gulp.task('js:build', function(){
     ('src/js/vendor/jquery.fancybox.js'),
     ('src/js/vendor/jquery.formstyler.js'),
     ('src/js/vendor/fakescroll.js'),
+    ('src/js/vendor/masonry.pkgd.min.js'),
+    ('src/js/vendor/imagesloaded.pkgd.min.js'),
 	(path.src.js),
 	])
     .pipe(concat('app.min.js'))

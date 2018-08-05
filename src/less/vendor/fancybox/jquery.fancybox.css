@@ -1,7 +1,3 @@
-body.compensate-for-scrollbar {
-    overflow: hidden;
-}
-
 .fancybox-active {
     height: auto;
 }
@@ -760,6 +756,10 @@ body.compensate-for-scrollbar {
 
 .fancybox-share__button--tw:hover {
     background: #0d95e8;
+}
+
+.compensate-for-scrollbar{
+    margin-right: 0 !important;
 }
 
 .fancybox-share__button svg {
