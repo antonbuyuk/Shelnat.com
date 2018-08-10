@@ -16,7 +16,7 @@
                 transform: scale(1.2);
             }
 
-            object{
+            i{
                 margin-left: 1rem;
             }
         }
@@ -38,7 +38,7 @@
         display: block;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         width: 100%;
         padding-top: 134%;
 
@@ -50,7 +50,7 @@
             display: block;
             background-position: center;
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: cover;
             width: 100%;
             padding-top: 134%;
             opacity: 0;
@@ -82,12 +82,13 @@
         position: relative;
         display: inline-flex;
         align-items: center;
+        white-space: nowrap;
 
-        object{
+        i{
             width: 100%;
             display: block;
-            max-width: 1.25rem;
             margin-left: 0.75rem;
+            font-size: 75%;
             transition: @transition-time;
         }
     }

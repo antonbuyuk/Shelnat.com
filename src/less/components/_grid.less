@@ -51,9 +51,9 @@
     }
 
     &_information{
-        position: absolute;
+        position: fixed;
         left: 0;
-        top: 0;
+        top: 7rem;
         background-color: @black;
         z-index: 5;
         height: ~'calc(100% - 0.5rem)';
@@ -70,13 +70,14 @@
             max-width: none;
             transform: none;
             padding-bottom: 5rem;
+            top: 0;
         }
 
         &:after{
             content: 'описание';
             color: @white;
-            transform: rotate(270deg) translateY(-50%);
-            position: sticky;
+            transform: rotate(270deg) translateX(25%);
+            position: fixed;
             right: 0;
             top: 50%;
             cursor: pointer;
@@ -85,7 +86,7 @@
             font-size: 1.125rem;
             text-transform: uppercase;
             transition: all .6s ease;
-            margin-left: 43rem;
+            // margin-left: 43rem;
 
             @media (max-width: 63.975em){
                 display: none;
@@ -116,5 +117,9 @@
     &_container{
         position: relative;
         width: 100%;
+
+        @media (max-width: 63.975em){
+            margin-top: -1rem;
+        }
     }
 }

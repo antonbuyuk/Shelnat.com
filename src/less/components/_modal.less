@@ -9,9 +9,17 @@
     align-items: center;
     justify-content: center;
     display: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: 1s linear 0s;
 
     &.is-active{
         display: flex;
+        opacity: 1;
+
+        .modal_video{
+            opacity: 1;
+        }
     }
 }
 
@@ -19,6 +27,12 @@
     position: relative;
     width: 100%;
     max-width: 30rem;
+
+    &_video{
+        max-width: 50rem;
+        opacity: 0;
+        transition: 1s linear 0.375s;
+    }
 
     &_close{
         position: absolute;

@@ -10,9 +10,22 @@ $(document).ready(function(){
     
     $('.video_list_item').click(function () {
         var src = $(this).data('src');
+        $('.iframe_parents iframe').attr('src', src);
+    });
 
-        console.log(src);
-        $('.video_container iframe').attr('src', src);
+    if ($('.video_page').length) {
+        $('.video_list_item').click(function () {
+            $('.overlay').addClass('is-active');
+        });
+    }
+
+    $('.showProject').click(function(){
+        
+        setTimeout(function(){ $('.fancybox-container').addClass('fancybox-show-thumb'); }, 1000);
+    })
+
+    $('.overlay').click(function () {
+        $(this).removeClass('is-active');
     });
 
     if ($('.grid').length){
@@ -66,7 +79,7 @@ $('.portfolio_carousel').owlCarousel({
     loop: true,
     margin: 30,
     nav: true,
-    navText: ["<img src='./templates/_ares/img/svg/prev.svg'>", "<img src='./templates/_ares/img/svg/next.svg'>"],
+    navText: ["<img src='./wp-content/themes/shelnat/templates/_ares/img/svg/prev.svg'>", "<img src='./wp-content/themes/shelnat/templates/_ares/img/svg/next.svg'>"],
     responsive: {
         0: {
             items: 1
@@ -84,7 +97,7 @@ $('.courses_carousel').owlCarousel({
     loop: false,
     margin: 30,
     nav: true,
-    navText: ["<img src='./templates/_ares/img/svg/prev.svg'>", "<img src='./templates/_ares/img/svg/next.svg'>"],
+    navText: ["<img src='./wp-content/themes/shelnat/templates/_ares/img/svg/prev.svg'>", "<img src='./wp-content/themes/shelnat/templates/_ares/img/svg/next.svg'>"],
     responsive: {
         0: {
             items: 1
@@ -110,9 +123,9 @@ $(document).ready(function () {
     $('#fullpage').fullpage({
         //options here
         navigation: true,
-        anchors: ['main', 'portfolio', 'design-project', 'services', 'articles', 'video', 'education', 'faq', 'contacts'],
+        anchors: ['main', 'portfolio', 'design-project', 'services', 'articles', 'video',  'faq', 'contacts'],
         navigationPosition: 'right',
-        navigationTooltips: ['main', 'portfolio', 'design-project', 'services', 'articles', 'video', 'education', 'faq', 'contacts'],
+        navigationTooltips: ['main', 'portfolio', 'design-project', 'services', 'articles', 'video',  'faq', 'contacts'],
         showActiveTooltip: false,
         autoScrolling: true,
         scrollHorizontally: true,
@@ -128,7 +141,7 @@ $(document).ready(function () {
             if (destination.index == 3) {
                 $('.header').removeClass('header-black');
                 $('.header').addClass('header-white');
-            } else if (destination.index == 7) {
+            } else if (destination.index == 6) {
                 $('.header').removeClass('header-black');
                 $('.header').addClass('header-white');
             } else {

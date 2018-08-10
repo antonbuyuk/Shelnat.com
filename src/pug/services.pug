@@ -1,0 +1,100 @@
+extends templates/_layout
+
+block vars
+    - var page = "default_page";
+    - var title = "courses";
+
+block content
+    .row
+        .columns
+            include ./components/_breadcrumbs
+    .row.align-middle.mb-5
+        .columns.small-12.medium-12.large-7
+            .flex-wrap.align-middle.mb-3
+                -var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Услуги и цены"}];
+                include components/_title
+            .text.color-black.mb-3
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                p Стоимость разработки дизайн-проекта для общественных пространств и коммерческой недвижимости рассчитывается индивидуально, по запросу. 
+        .columns.small-12.medium-8.medium-offset-2.large-4.large-offset-1
+            include components/_designCard
+
+    .section.section_page(style='background-color: #f7f5f7;')
+        .row 
+            .column.small-12
+                .flex-wrap.align-middle.mb-3
+                    -var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Вспомогательные услуги"}];
+                    include components/_title
+            .columns.small-12.medium-6
+                .title.text_size-extraLarge.color-black.weight-bold.mb-1 Авторский надзор
+                .text.color-black.weight-bold.mb-2 от 25 000 р/месяц
+                .text.text_area.color-black.mb-3
+                    p Авторский надзор - Договор на услугу авторского надзора заключается отдельно, после подготовки дизайн-проекта. Окончательная сумма определяется после разработки дизайн-проекта, она может зависеть от точного расположения объекта, необходимой частоты выездов на объект, интенсивности предстоящих работ и строительной бригады, с которой придется взаимодействовать (если бригада по нашей рекомендации, с которой уже налажено взаимодействие, то здесь проще). В ходе авторского надзора осуществляется контроль строительства на предмет соответствия дизайн-проекту.
+                    ul
+                        li Посещение объекта и ведение журнала авторского надзора по результатам визита;
+                        li регулярная поддержка и решение со строителями операционных вопросов по телефону и видео-звонкам.
+            .columns.small-12.medium-6
+                .title.text_size-extraLarge.color-black.weight-bold.mb-1 Комплектация
+                .text.color-black.weight-bold.mb-2 от 40 000 р/месяц
+                .text.text_area.color-black.mb-3
+                    p Комплектация - Договор на комплектацию также заключается после подготовки дизайн-проекта. Данная услуга оказывается после завершения дизайн-проекта, когда все решения и предметы утверждены. Стоимость услуги составляет от 40 000р/мес. в формате фиксированной оплаты + переменная часть в % от сметы закупаемых позиций. Подробно формат взаимодействия прописывается в договоре. 
+                    ul
+                        li Поиск и подбор чистовых материалов и предметов интерьера, согласно утвержденному дизайн-проекту; 
+                        li выбор поставщиков по критериям цены и надежности; 
+                        li поиск и замена снятых с производства позиций к моменту заказа, без нарушения концепции дизайна; 
+                        li размещение заказа и контроль поставок к необходимому строителям сроку на объект. 
+                        li профессиональные и дилерские скидки от производителей и поставщиков материалов, мебели, сантехники, светильников и других предметов интерьера.
+    .section.section_page
+        .row
+            .columns.small-12
+                .flex-wrap.align-middle.mb-3
+                    -var titleItem = [{"size":"large","color":"black","weight":"bold","text":"7 шагов к интерьеру вашей мечты"}];
+                    include components/_title
+            .columns.small-12.medium-6.large-6
+                include ./components/_step
+            .columns.small-12.medium-6.large-6
+                include ./components/_step
+            .columns.small-12.medium-6.large-6
+                include ./components/_step
+            .columns.small-12.medium-6.large-6
+                include ./components/_step
+            .columns.small-12.medium-6.large-6
+                include ./components/_step
+            .columns.small-12.medium-6.large-6
+                include ./components/_step
+            .columns.small-12.medium-6.large-6
+                include ./components/_step
+            .columns.small-12.medium-6.large-6
+                include ./components/_step    
+    .section.section_page.mb-5(style='background-color: #f7f5f7;')
+        .row
+            .columns.small-12.medium-12.large-8
+                .video_container
+                    .iframe_parents
+                        iframe(src="https://www.youtube.com/embed/2s2MyioXrIQ?enablejsapi=1" frameborder="0" allowfullscreen="" controls="2" modestbranding="")
+            .columns.small-8.small-offset-2.medium-6.medium-offset-3.large-4.large-offset-0
+                .course_area(style='background-image: url(./templates/_ares/img/png/course.png)')
+                    .portfolio_info
+                        .title.text_size-extraLarge.weight-bold.color-black.mb-1 Обучение дизайну интерьеров                
+                        a.link.link_size-small.link_color-black.weight-bold(href="#")
+                            | Узнать больше
+                            i.i-arrow_right
+    .row.align-middle
+        .columns.small-12.medium-12.large-7
+            .flex-wrap.align-middle.mb-4
+                -var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Форма заказа"}];
+                include components/_title
+            .text.color-grey.mb-1
+                p Уточнить подробности и заказать дизайн-проект:
+            form(action="", data-abide, novalidate)
+                -var inputItems = [{"small":"12","medium":"6","large":"6","placeholder":"Портфолио"},{"small":"12","medium":"6","large":"6","placeholder":"Телефон*"},{"small":"12","medium":"6","large":"6","placeholder":"E-mail*"},{"small":"12","medium":"6","large":"6","placeholder":"Объект"}];
+                include components/_input
+                include components/_textarea
+                .row
+                    .columns.flex-row
+                        -var checkboxItem = [{"id":"test1","text":"Я даю согласие на обработку своих персональных данных"}];
+                        include components/_checkbox
+                        -var btnItem = [{"href":"#","size":"medium","type":"black ml-auto","text":"Отправить"}];
+                        include components/_btn
+        .columns.small-12.medium-8.large-4.large-offset-1
+            include components/_contacts

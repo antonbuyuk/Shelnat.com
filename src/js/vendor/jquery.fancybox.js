@@ -277,7 +277,7 @@
     },
 
     thumbs: {
-      autoStart: false, // Display thumbnails on opening
+      autoStart: true, // Display thumbnails on opening
       hideOnClose: true, // Hide thumbnail grid when closing animation starts
       parentEl: ".fancybox-container", // Container is injected into this element
       axis: "y" // Vertical (y) or horizontal (x) scrolling
@@ -307,7 +307,7 @@
     beforeShow: $.noop, // Before open animation starts
     afterShow: $.noop, // When content is done loading and animating
 
-    beforeClose: $.noop, // Before the instance attempts to close. Return false to cancel the close.
+    beforeClose: $.noop, // Before the instance attempts to close. Return true to cancel the close.
     afterClose: $.noop, // After instance has been closed
 
     onActivate: $.noop, // When instance is brought to front
