@@ -1,0 +1,48 @@
+.slider{
+    position: relative;
+    width: 100%;
+
+    &_area{
+        display: flex;
+    }
+
+    &_item{
+        position: relative;
+        margin-right: 1.875rem;
+        display: inline-flex;
+
+        img{
+            width: 100%;
+            max-height: 24.375rem;
+        }
+
+        @media (min-width: 64em){
+            min-width: 40rem;
+        }
+
+        &:last-child{
+            margin-right: 0;
+        }
+        
+    }
+
+    &_nav{
+        display: none;
+    }
+
+    &_arrow{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.875rem;
+        height: 1.875rem;
+
+        &-left{
+            left: 1rem;
+        }
+
+        &-right{
+            right: 1rem;
+        }
+    }
+}

@@ -24,6 +24,7 @@
 }
 .jq-selectbox {
 	z-index: 10;
+	width: 100%;
 }
 .jq-selectbox__select {
 	position: relative;

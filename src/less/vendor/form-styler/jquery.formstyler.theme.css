@@ -1,25 +1,15 @@
 .jq-selectbox__select {
-	height: 32px;
-	padding: 0 45px 0 10px;
-	border: 1px solid #CCC;
-	border-bottom-color: #B3B3B3;
-	border-radius: 4px;
-	background: linear-gradient(#FFF, #E6E6E6);
-	box-shadow: inset 1px -1px #F1F1F1, inset -1px 0 #F1F1F1, 0 1px 2px rgba(0,0,0,.1);
-	font: 14px/32px Arial, sans-serif;
+    border-radius: 0;
+    display: block;
+    border: 1px solid #d2d2d2;
+    font-size: .875rem;
+    width: 100%;
+    padding: .6875rem 1.25rem;
 	color: #333;
-	text-shadow: 1px 1px #FFF;
+	width: 100%;
 }
-.jq-selectbox__select:hover {
-	background: linear-gradient(#F6F6F6, #E6E6E6);
-}
-.jq-selectbox__select:active {
-	background: #F5F5F5;
-	box-shadow: inset 1px 1px 3px #DDD;
-}
-.jq-selectbox.focused .jq-selectbox__select {
-	border: 1px solid #5794BF;
-}
+
+
 .jq-selectbox.disabled .jq-selectbox__select {
 	border-color: #CCC;
 	background: #F5F5F5;
@@ -52,7 +42,7 @@
 	border-left: 5px solid transparent;
 }
 .jq-selectbox:hover .jq-selectbox__trigger-arrow {
-	border-top-color: #000;
+	border-top-color: #333;
 }
 .jq-selectbox.disabled .jq-selectbox__trigger-arrow {
 	border-top-color: #AAA;
@@ -60,13 +50,11 @@
 .jq-selectbox__dropdown {
 	box-sizing: border-box;
 	width: 100%;
-	margin: 2px 0 0;
+	margin: 1px 0 0;
 	padding: 0;
-	border: 1px solid #CCC;
-	border-radius: 4px;
+	border: 1px solid #d2d2d2;
+	border-radius: 0px;
 	background: #FFF;
-	box-shadow: 0 2px 10px rgba(0,0,0,.2);
-	font: 14px/18px Arial, sans-serif;
 }
 .jq-selectbox__search {
 	margin: 5px;
@@ -96,14 +84,14 @@
 .jq-selectbox li {
 	min-height: 18px;
 	padding: 5px 10px 6px;
-	color: #231F20;
+	color: #333;
 }
 .jq-selectbox li.selected {
-	background-color: #A3ABB1;
-	color: #FFF;
+	background-color: #d2d2d2;
+	color: #333;
 }
 .jq-selectbox li:hover {
-	background-color: #08C;
+	background-color: #9f8998;
 	color: #FFF;
 }
 .jq-selectbox li.disabled {
@@ -159,7 +147,7 @@
 	border-radius: 0 0 3px 3px;
 }
 .jq-select-multiple li.selected {
-	background: #08C;
+	background: #e1d8de;
 	color: #FFF;
 }
 .jq-select-multiple li.disabled {

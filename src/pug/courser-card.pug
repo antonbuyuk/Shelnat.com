@@ -1,0 +1,93 @@
+extends templates/_layout
+
+block vars
+    - var page = "courses_page";
+    - var title = "courses_card";
+
+block content
+    .section.background_image.background-cover.background-50.flex-column.align-center(style="background-image: url('./templates/_ares/img/jpg/cours-bg.jpg');")
+        .row
+            .columns
+                include ./components/_breadcrumbs
+        .row.mb-4
+            .columns.small-12
+                -var titleItem = [{"size":"large","color":"black","weight":"bold text-center","text":"Дизайн без воды"}];
+                include components/_title
+        .row
+            .columns.small-12
+                img(src="./templates/_ares/img/svg/course-0.svg", alt="")
+    .section.section_page
+        .row
+            .columns.small-12
+                .flex-wrap.align-middle.mb-3
+                    -var titleItem = [{"size":"large","color":"black","weight":"bold","text":"О курсе"}];
+                    include components/_title
+                .text.color-black
+                    p Курс "Море дизайна без воды" поможет разобраться в самостоятельном ремонте, подарит базовые знания и навыки, вы будете понимать, как собрать все хочушки воедино и получить ремонт вашей мечты. А с помощью выполнения практических заданий и персональной обратной связи лично от Наталии, вы набьете шишки во время обучения и научитесь избегать ошибок при создании проекта для собственного дома, что убережет вас от переделок и дополнительных трат при самостоятельном ремонте.
+    .section.section_page(style='background-color: #f7f5f7;')
+        .row.mb-2
+            .columns.small-12
+                -var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Программа курса"}];
+                include components/_title
+        .row
+            .columns.small-12.medium-6.large-6
+                include ./components/_courseWeek
+            .columns.small-12.medium-6.large-6
+                include ./components/_courseWeek
+            .columns.small-12.medium-6.large-6
+                include ./components/_courseWeek
+            .columns.small-12.medium-6.large-6
+                include ./components/_courseWeek
+    .section.section_page
+        .row.mb-2
+            .columns.small-12
+                -var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Работы наших студентов"}];
+                include components/_title
+        .row.expanded
+            .columns.small-12
+                .slider
+                    .slider_countainer
+                        .slider_area(data-simplebar-auto-hide="false")
+                            .slider_item
+                                img(src="./templates/_ares/img/jpg/student-1.jpg", alt="")
+                            .slider_item
+                                img(src="./templates/_ares/img/jpg/student-1.jpg", alt="")
+                            .slider_item
+                                img(src="./templates/_ares/img/jpg/student-1.jpg", alt="")
+                            .slider_item
+                                img(src="./templates/_ares/img/jpg/student-1.jpg", alt="")
+                    .slider_nav
+                        a.slider_arrow.slider_arrow-left
+                            img(src="./templates/_ares/img/svg/prev_w.svg", alt="")
+                        a.slider_arrow.slider_arrow-right
+                            img(src="./templates/_ares/img/svg/next_w.svg", alt="")
+    .section.section_page
+        .row.mb-2
+            .columns.small-12
+                -var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Стоимость курса"}];
+                include components/_title
+        .row
+            .columns.small-12.medium-6.large-6
+                include components/_package
+            .columns.small-12.medium-6.large-6
+                include components/_package
+    .section.section_page(style='background-color: #f7f5f7;')
+        .row
+            .columns
+                -var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Ответы на вопросы"}];
+                include components/_title
+        .row.accardion_list.accardion-black
+            .accardion_item.columns.small-12.medium-6
+    .section.section_page
+        .row.mb-3
+            .columns.small-12
+                .flex-wrap.align-middle
+                    -var titleItem = [{"size":"large","color":"black","weight":"bold","text":"Отзывы"}];
+                    include components/_title
+                    .stick.stick-grey.stick-32
+                    a.link.link_size-large.link_color-grey(href='#')
+                        | Все отзывы в нашей группе Вконтакте
+                        i.i-arrow_right
+        .row
+            .columns.small-12
+                

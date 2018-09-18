@@ -1,5 +1,24 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 270 545" style="" xml:space="preserve">
-<g>
-	<path width="270" height="545" fill="none" stroke-width="0.3125rem" stroke="#9F8998" d="M0 0 L270 0 L270 545 L0 545 Z" class="zweoqlOE_0"></path>
-</g>
-<style data-made-with="vivus-instant">.zweoqlOE_0{stroke-dasharray:1630 1632;stroke-dashoffset:1631;animation:zweoqlOE_draw 2000ms linear 0ms forwards;}@keyframes zweoqlOE_draw{100%{stroke-dashoffset:0;}}@keyframes zweoqlOE_fade{0%{stroke-opacity:1;}94.44444444444444%{stroke-opacity:1;}100%{stroke-opacity:0;}}</style></svg>
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 270 225" style="enable-background:new 0 0 270 225;" xml:space="preserve" stroke-width="0.25rem">
+<style type="text/css">
+	.st0 {
+	    fill: none;
+	    stroke: #9F8998;
+	    stroke-miterlimit: 10;
+	}
+
+	.st0 {
+	    stroke-dasharray: 540 542;
+	    stroke-dashoffset: 541;
+	    animation: kUGXMkNE_draw 2s linear 2s forwards;
+	}
+
+	@keyframes kUGXMkNE_draw {
+	    100% {
+	        stroke-dashoffset: 0;
+	    }
+    }
+</style>
+<polyline class="st0" points="0,0 270,0 270,225 "/>
+<polyline class="st0" points="0,0 0,225 270,225 "/>
+</svg>

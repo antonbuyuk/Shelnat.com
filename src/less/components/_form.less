@@ -168,6 +168,7 @@
 
     input{
         cursor: pointer;
+        width: 1.25rem;
 
         &:hover{
 
@@ -215,5 +216,25 @@
     label{
         color: #999;
         font-size: 0.875rem;
+
+        a{
+            color: @main;
+            border-bottom: 1px solid;
+            
+            &:hover{
+                border-bottom-color: transparent;
+            }
+        }
     }
+}
+
+.wpcf7-response-output{
+    margin-top: 2rem;
+    border: 1px solid #9f8998;
+    padding: 1rem 0.75rem;
+}
+
+.wpcf7-display-none,
+.screen-reader-response{
+    display: none;
 }

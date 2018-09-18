@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 521.76 297.68">
+    <defs>
+        <style>
+            .cls-1 {
+                font-size: 124.7px;
+                font-family: Marianna, Marianna;
+            }
+
+            .cls-1,
+            .cls-11,
+            .cls-2,
+            .cls-3 {
+                fill: #383537;
+            }
+
+            .cls-1,
+            .cls-2 {
+                stroke: #383537;
+                stroke-miterlimit: 10;
+                stroke-width: 2.5px;
+            }
+
+            .cls-2 {
+                font-size: 123.03px;
+                font-family: Corinthia, Corinthia;
+            }
+
+            .cls-3 {
+                font-size: 21.77px;
+            }
+
+            .cls-11,
+            .cls-3 {
+                font-family: Effra-Light, Effra;
+            }
+
+            .cls-4 {
+                letter-spacing: -0.08em;
+            }
+
+            .cls-5 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-6 {
+                letter-spacing: -0.01em;
+            }
+
+            .cls-7 {
+                letter-spacing: -0.02em;
+            }
+
+            .cls-8 {
+                letter-spacing: 0.03em;
+            }
+
+            .cls-9 {
+                letter-spacing: -0.02em;
+            }
+
+            .cls-10 {
+                letter-spacing: 0em;
+            }
+
+            .cls-11 {
+                font-size: 30.01px;
+            }
+        </style>
+    </defs>
+    <title>mob__utp</title>
+    <g id="Слой_2" data-name="Слой 2">
+        <text class="cls-1" transform="translate(125.17 112.6) scale(0.98 1)">оре дизайна</text>
+        <text class="cls-2" transform="translate(7.1 112.98)">М</text>
+        <text class="cls-1" transform="translate(125.17 223.6) scale(0.98 1)">без воды</text>
+        <text x="-48.17" y="-125.42"></text>
+        <text class="cls-3" transform="translate(188.83 70.73)">
+            <tspan class="cls-4">г</tspan>
+            <tspan x="7.08" y="0">л</tspan>
+            <tspan class="cls-5" x="19.18" y="0">у</tspan>
+            <tspan x="29.02" y="0">бо</tspan>
+            <tspan class="cls-6" x="54.03" y="0">к</tspan>
+            <tspan x="63.79" y="0">ое пог</tspan>
+            <tspan class="cls-7" x="124.81" y="0">р</tspan>
+            <tspan class="cls-8" x="136.08" y="0">у</tspan>
+            <tspan class="cls-9" x="146.79" y="0">ж</tspan>
+            <tspan class="cls-10" x="161.08" y="0">ение в</tspan>
+        </text>
+        <text class="cls-11" transform="translate(174.5 148.77)">но</text>
+    </g>
+</svg>

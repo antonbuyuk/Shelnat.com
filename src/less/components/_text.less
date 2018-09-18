@@ -32,6 +32,7 @@
 
 		&-extraLarge{
 			font-size: 1.5rem;
+			line-height: 2.125rem;
 		}
 	}
 
@@ -62,7 +63,18 @@
 			li{
 				color: #666;
 				position: relative;
+
+				a{
+					color: @main;
+					transition: @transition-time;
+					border-bottom: 1px solid;
+
+					&:hover{
+						border-bottom: transparent;
+					}
+				}
 			}
+			
 		}
 
 		ul{
@@ -86,6 +98,16 @@
 					width: 0.5rem;
 					height: 0.5rem;
 					display: block;
+				}
+
+				a{
+					color: @main;
+					transition: @transition-time;
+					border-bottom: 1px solid;
+
+					&:hover{
+						border-bottom: transparent;
+					}
 				}
 			}
 		}
